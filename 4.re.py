@@ -1,10 +1,14 @@
 import re
+import env
+
 # abcd, book, desk
 # ca?e
 # care, cafe, case, cave
 # caae, cabe, cace, cade, ...
 
 p = re.compile("ca.e")
+
+print(env.User_Agent)
 
 # . (ca.e) : 하나의 문자를 의미 > care, cafe | caffe (x)
 # ^ (^de) : 문자열의 시작 > desk, destination | fade (x)
