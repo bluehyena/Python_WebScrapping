@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def scrolldown(interval : int, web_driver : webdriver) -> None:
     assert isinstance(interval, int)
-    # assert callable(web_driver)
+    assert isinstance(browser, webdriver.Chrome)
 
     prev_height = web_driver.execute_script("return document.body.scrollHeight")
     while True:

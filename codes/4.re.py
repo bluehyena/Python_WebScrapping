@@ -8,8 +8,6 @@ import env
 
 p = re.compile("ca.e")
 
-print(env.User_Agent)
-
 # . (ca.e) : 하나의 문자를 의미 > care, cafe | caffe (x)
 # ^ (^de) : 문자열의 시작 > desk, destination | fade (x)
 # $ (se$) : 문자열의 끝 > case, base | face (x)

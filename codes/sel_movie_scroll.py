@@ -15,6 +15,7 @@ browser.get(url)
 
 #Scroll Down to Bottom
 browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+
 interval = 2
 
 prev_height = browser.execute_script("return document.body.scrollHeight")
