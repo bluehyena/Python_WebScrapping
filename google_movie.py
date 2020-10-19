@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+import env
 
 url = "https://play.google.com/store/movies/top"
-headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+headers = {"User-Agent":env.User_Agent
 , "Accept-Language":"ko-KR,ko"}
 
 res = requests.get(url, headers=headers)
